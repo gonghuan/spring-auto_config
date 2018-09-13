@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: microservice-config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          #配置git仓库的地址
+          uri: https://github.com/gonghuan/spring-cloud-config-repo
+          #git仓库的账号
+          username: gonghuan
+          #git仓库密码
+          password: gh19931008
